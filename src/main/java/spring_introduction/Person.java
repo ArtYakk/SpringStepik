@@ -9,15 +9,15 @@ public class Person {
     private int age;
     private Pet pet;
 
-    @Autowired
-    public Person(Pet pet){
-        System.out.println("Person bean is created");
-        this.pet = pet;
-    }
-
-//    public Person(){
+//    @Autowired
+//    public Person(Pet pet){
 //        System.out.println("Person bean is created");
+//        this.pet = pet;
 //    }
+
+    public Person(){
+        System.out.println("Person bean is created");
+    }
 
     public String getSurname() {
         return surname;
@@ -37,8 +37,9 @@ public class Person {
         this.age = age;
     }
 
-    public void setPet(Pet pet) {
-        System.out.println("Class Person: set pet");
+    @Autowired
+    public void anyMethodName(Pet pet) {
+        System.out.println("Class Person: anyMethodName");
         this.pet = pet;
     }
 
