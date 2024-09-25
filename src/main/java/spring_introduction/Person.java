@@ -18,15 +18,15 @@ public class Person {
 //    @Qualifier("dog")
     private Pet pet;
 
-//    @Autowired
-//    public Person(@Qualifier("catBean") Pet pet){
-//        System.out.println("Person bean is created");
-//        this.pet = pet;
-//    }
-
-    public Person(){
+    @Autowired
+    public Person(@Qualifier("catBean") Pet pet){
         System.out.println("Person bean is created");
+        this.pet = pet;
     }
+
+//    public Person(){
+//        System.out.println("Person bean is created");
+//    }
 
     public String getName() {
         return name;
