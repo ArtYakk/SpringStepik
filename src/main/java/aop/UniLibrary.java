@@ -5,16 +5,32 @@ import org.springframework.stereotype.Component;
 @Component
 public class UniLibrary extends AbstractLibrary {
 
-    public void getBook(Book book){
+    public void getBook(){
         System.out.println("Мы берем книгу из UniLibrary");
+    }
+
+    public void returnBook(){
+        System.out.println("Мы возвращаем книгу в UniLibrary");
     }
 
     public void getMagazine(){
         System.out.println("Мы берем ЖУРНАЛ из UniLibrary");
     }
 
-    protected String returnBook(){
-        //System.out.println("Мы возвращаем книгу в UniLibrary");
-        return "вернул книгу";
+    public void returnMagazine(){
+        System.out.println("Мы возвращаем ЖУРНАЛ в UniLibrary");
     }
+
+    public void addBook(){
+        System.out.println("Мы добавляем книгу в UniLibrary");
+    }
+
+    public void addMagazine(){
+        System.out.println("Мы добавляем ЖУРНАЛ в UniLibrary");
+    }
+
+
+
+
+
 }
