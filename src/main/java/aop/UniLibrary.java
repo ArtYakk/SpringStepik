@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 public class UniLibrary extends AbstractLibrary {
 
     public void getBook(Book book){
-        System.out.println("Мы берем книгу \"" + book.getName() + "\" из UniLibrary");
+        System.out.println("Мы берем книгу из UniLibrary");
     }
 
     public void getMagazine(){
-        System.out.println("Мы берем ЖУРНАЛ  из UniLibrary");
+        System.out.println("Мы берем ЖУРНАЛ из UniLibrary");
     }
 
     protected String returnBook(){
