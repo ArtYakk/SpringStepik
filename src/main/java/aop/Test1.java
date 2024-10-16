@@ -8,9 +8,11 @@ public class Test1 {
                 new AnnotationConfigApplicationContext(MyConfig.class);
 
         UniLibrary uniLibrary = context.getBean("uniLibrary", UniLibrary.class);
-//        Book book = context.getBean("book", Book.class);
+        Book book = context.getBean("book", Book.class);
         uniLibrary.getBook();
-        uniLibrary.getMagazine();
+        uniLibrary.addBook("Artem", book);
+        uniLibrary.addMagazine();
+//        uniLibrary.getMagazine();
 //        uniLibrary.returnMagazine();
 //        uniLibrary.addBook();
 
